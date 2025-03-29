@@ -1,0 +1,42 @@
+
+# rising-tide-managed: start
+# Ignore build outputs from performing a nix-build or `nix build` command
+/result
+/result-*
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# uv virtual environment
+/.venv
+
+.ruff_cache/
+
+.pytest_cache/
+/test_results/
+
+.mypy_cache/
+
+# Jetbrains-generated CMake build files
+cmake-build-*
+
+/.env
+
+/.direnv
+
+.coverage*
+/test_results/
+
+# rising-tide-managed: end
+
+# nixago: ignore-linked-files
+/taskfile.yml
+/.lefthook.yml
+/.ruff.toml
+/.vscode/extensions.json
+/.vscode/settings.json

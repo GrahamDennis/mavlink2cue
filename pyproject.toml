@@ -1,0 +1,14 @@
+[project]
+name = "mavlink2cue"
+version = "0.1.0"
+description = "MAVLink dialect to CUE schema converter"
+authors = [{ name = "Graham Dennis", email = "graham.dennis@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = ["click", "pymavlink"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+mavlink2cue = "mavlink2cue:cli"
