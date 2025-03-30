@@ -73,7 +73,7 @@ def convert_message(message: mavparse.MAVType) -> str:
                 "\n".join(
                     (
                         f"metadata: {convert_message_metadata(message)}",
-                        "#fields: {",
+                        "fields: {",
                         textwrap.indent(
                             "\n".join(
                                 f"{field.name}{'?' if idx >= extensions_start else ''}: {convert_field(field)}"
@@ -100,19 +100,21 @@ def convert_dialect(mavxmls: list[mavparse.MAVXML]) -> str:
 
     return "\n".join(
         (
-            "#enums: {",
+            "#schema: {",
+            "  enums: {",
             *(
-                textwrap.indent(f"{enum.name}?: {convert_enum(enum)}", _INDENT)
+                textwrap.indent(f"{enum.name}?: {convert_enum(enum)}", _INDENT * 2)
                 for mavxml in mavxmls
                 for enum in mavxml.enum
             ),
-            "}",
-            "#messages: {",
+            "  }",
+            "  messages: {",
             *(
-                textwrap.indent(f"{message.name}?: {convert_message(message)}", _INDENT)
+                textwrap.indent(f"{message.name}?: {convert_message(message)}", _INDENT * 2)
                 for mavxml in mavxmls
                 for message in mavxml.message
             ),
+            "  }",
             "}",
         )
     )
