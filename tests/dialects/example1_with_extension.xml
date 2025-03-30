@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<mavlink>
+  <dialect>2</dialect>
+  <messages>
+    <message id="176" name="RALLY_FETCH_POINT">
+      <description>Request a current rally point from MAV. MAV should respond with a RALLY_POINT message. MAV should not respond if the request is invalid.</description>
+      <field type="uint8_t" name="target_system">System ID.</field>
+      <field type="uint8_t" name="target_component">Component ID.</field>
+      <field type="uint8_t" name="idx">Point index (first point is 0).</field>
+      <extensions/>
+      <field type="float" name="flow_rate_x" units="rad/s">Flow rate in radians/second about X axis</field>
+      <field type="float" name="flow_rate_y" units="rad/s">Flow rate in radians/second about Y axis</field>
+    </message>
+  </messages>
+</mavlink>

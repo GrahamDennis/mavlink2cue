@@ -16,6 +16,8 @@ pythonPackages.buildPythonPackage {
 
   dependencies = with pythonPackages; [
     pymavlink
+    click
+    attrs
   ];
   dev-dependencies = with pythonPackages; [
     pytest
