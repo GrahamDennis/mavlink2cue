@@ -51,7 +51,7 @@ def parse_dialect(dialect: os.PathLike[str]) -> list[mavparse.MAVXML]:
 
 def convert_field(field: mavparse.MAVField, include_name: bool = True) -> str:
     fields = [
-        f"type: {field.type}",
+        f'type: "{field.type}"',
         f"wire_length: {field.wire_length}",
         f"wire_offset: {field.wire_offset}",
     ]
