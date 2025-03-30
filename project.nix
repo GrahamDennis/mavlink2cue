@@ -1,5 +1,7 @@
 {
   name = "mavlink2cue";
-  languages.python.enable = true;
-  languages.python.callPackageFunction = import ./package.nix;
+  languages.python = {
+    enable = true;
+    callPackageFunction = import ./package.nix;
+  };
 }

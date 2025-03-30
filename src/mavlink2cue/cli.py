@@ -50,7 +50,14 @@ def parse_dialect(dialect: os.PathLike[str]) -> list[mavparse.MAVXML]:
 
 
 def convert_field(field: mavparse.MAVField, include_name: bool = True) -> str:
-    return f"""{{ type: "{field.type}", wire_length: {field.wire_length}, wire_offset: {field.wire_offset} }}"""
+    fields = [
+        f"type: {field.type}",
+        f"wire_length: {field.wire_length}",
+        f"wire_offset: {field.wire_offset}",
+    ]
+    if field.enum:
+        fields.append(f"enum: {field.enum}")
+    return f"""{{ {", ".join(fields)} }}"""
 
 
 def convert_message_metadata(message: mavparse.MAVType) -> str:
