@@ -56,7 +56,7 @@ def convert_field(field: mavparse.MAVField, include_name: bool = True) -> str:
         f"wire_offset: {field.wire_offset}",
     ]
     if field.enum:
-        fields.append(f"enum: {field.enum}")
+        fields.append(f'enum: "{field.enum}"')
     return f"""{{ {", ".join(fields)} }}"""
 
 
