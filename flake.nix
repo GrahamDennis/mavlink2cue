@@ -4,7 +4,7 @@
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.11";
-    rising-tide.url = "github:GrahamDennis/rising-tide";
+    rising-tide.url = "github:GrahamDennis/rising-tide?dir=.minimal";
   };
 
   outputs =
