@@ -72,7 +72,6 @@ def convert_message(message: mavparse.MAVType) -> str:
             textwrap.indent(
                 "\n".join(
                     (
-                        f"metadata: {convert_message_metadata(message)}",
                         "fields: {",
                         textwrap.indent(
                             "\n".join(
@@ -82,6 +81,7 @@ def convert_message(message: mavparse.MAVType) -> str:
                             _INDENT,
                         ),
                         "}",
+                        f"metadata: {convert_message_metadata(message)}",
                     )
                 ),
                 _INDENT,
