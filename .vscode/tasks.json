@@ -1,0 +1,178 @@
+{
+  "tasks": [
+    {
+      "command": "task build",
+      "label": "build",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task check",
+      "label": "check",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task check:mypy",
+      "label": "check:mypy",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task check:pyright",
+      "label": "check:pyright",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task check:treefmt",
+      "label": "check:treefmt",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task check:treefmt:*",
+      "label": "check:treefmt:*",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task ci",
+      "label": "ci",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task ci:check-derivation-unchanged",
+      "label": "ci:check-derivation-unchanged",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task ci:check-not-dirty",
+      "label": "ci:check-not-dirty",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task nix-build:*",
+      "label": "nix-build:*",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task pre-commit",
+      "label": "pre-commit",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task test",
+      "label": "test",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task test:coverage-report",
+      "label": "test:coverage-report",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task test:pytest",
+      "label": "test:pytest",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:coverage",
+      "label": "tool:coverage",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:deadnix",
+      "label": "tool:deadnix",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:keep-sorted",
+      "label": "tool:keep-sorted",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:mdformat",
+      "label": "tool:mdformat",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:mypy",
+      "label": "tool:mypy",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:nil",
+      "label": "tool:nil",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:nixfmt-rfc-style",
+      "label": "tool:nixfmt-rfc-style",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:pyright",
+      "label": "tool:pyright",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:pytest",
+      "label": "tool:pytest",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:ripsecrets",
+      "label": "tool:ripsecrets",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:ruff",
+      "label": "tool:ruff",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:shellcheck",
+      "label": "tool:shellcheck",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:shfmt",
+      "label": "tool:shfmt",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:taplo",
+      "label": "tool:taplo",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "task tool:treefmt",
+      "label": "tool:treefmt",
+      "problemMatcher": [],
+      "type": "shell"
+    }
+  ]
+}

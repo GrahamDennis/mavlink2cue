@@ -37,16 +37,17 @@
     "rising-tide": {
       "locked": {
         "dir": ".minimal",
-        "lastModified": 1747440351,
-        "narHash": "sha256-U9QvZsPuk/HSOobq6kxdAVOY2RP0wEtIrJvx/6kvNwc=",
+        "lastModified": 1755681464,
+        "narHash": "sha256-CG14nGkD4WywXlmfTe4A1F6DrBn7aHhHpi4Acr6jkYs=",
         "owner": "GrahamDennis",
         "repo": "rising-tide",
-        "rev": "74f876dd0998d3cb53aed38642ad654e502be0ae",
+        "rev": "6cdccc162a4f3ce89c2d69f366e5375bb05b2410",
         "type": "github"
       },
       "original": {
         "dir": ".minimal",
         "owner": "GrahamDennis",
+        "ref": "gdennis/change-minimal-flake",
         "repo": "rising-tide",
         "type": "github"
       }

@@ -4,11 +4,11 @@
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.11";
-    rising-tide.url = "github:GrahamDennis/rising-tide?dir=.minimal";
+    rising-tide.url = "github:GrahamDennis/rising-tide?ref=gdennis/change-minimal-flake&dir=.minimal";
   };
 
   outputs =
-    {
+    inputs@{
       flake-utils,
       nixpkgs,
       rising-tide,
@@ -34,5 +34,9 @@
         rootProjectBySystem = perSystemOutputs.project;
       };
     in
-    perSystemOutputs // ({ inherit (systemIndependentOutputs) overlays pythonOverlays; });
+    perSystemOutputs
+    // ({
+      inherit (systemIndependentOutputs) overlays pythonOverlays;
+      inherit inputs;
+    });
 }
