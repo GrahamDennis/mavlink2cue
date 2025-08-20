@@ -8,7 +8,7 @@
   };
 
   outputs =
-    {
+    inputs@{
       flake-utils,
       nixpkgs,
       rising-tide,
@@ -34,5 +34,9 @@
         rootProjectBySystem = perSystemOutputs.project;
       };
     in
-    perSystemOutputs // ({ inherit (systemIndependentOutputs) overlays pythonOverlays; });
+    perSystemOutputs
+    // ({
+      inherit (systemIndependentOutputs) overlays pythonOverlays;
+      inherit inputs;
+    });
 }
